@@ -1,22 +1,25 @@
 import React from 'react';
 import './PortManagement.css';
+
 import * as NewShip from '../PortManagementLogic/newShip.js';
 import * as NewTrain from '../PortManagementLogic/newTrain.js';
 import * as Show from '../PortManagementLogic/show.js';
 import * as Unload from '../PortManagementLogic/unload.js';
+
+import PopupComponent from '../components/PopupComponent';
 
 import ship from '../images/ship.png';
 import empty from '../images/empty.png';
 import cargo from '../images/cargo.png';
 import blank from '../images/blank.png';
 import coupling from '../images/coupling.png';
-import wagon from '../images/wagon.png';
 import wall from '../images/wall.png';
 import wheel from '../images/wheel.png';
 import chimney from '../images/chimney.png';
 import crane from '../images/crane.png';
 import rail from '../images/rail.png';
 import hut from '../images/hut.png';
+import information from '../images/information.png';
 
 export class SortingVisualiser extends React.Component {
     constructor(props) {
@@ -29,6 +32,8 @@ export class SortingVisualiser extends React.Component {
             ship_stack: [],
             storage_stack: [],
             train_stack: [],
+
+            isOpen: false,
         };
     }
 
@@ -69,7 +74,6 @@ export class SortingVisualiser extends React.Component {
 
     render() {
         let port_view = this.state.port_view;
-        console.log(port_view);
         if (port_view.length) {
             for (let i = 0; i < port_view.length; i++) {
                 for (let j = 0; j < port_view[i].length; j++) {
@@ -93,7 +97,7 @@ export class SortingVisualiser extends React.Component {
                             port_view[i][j] = coupling;
                             break;
                         case "-":
-                            port_view[i][j] = wheel; //wagon;
+                            port_view[i][j] = wheel;
                             break;
                         case "A":
                             port_view[i][j] = crane;
@@ -110,6 +114,8 @@ export class SortingVisualiser extends React.Component {
                         case "|":
                             port_view[i][j] = wall;
                             break;
+                        default:
+                            break;
                     }
                 }
             }
@@ -124,10 +130,23 @@ export class SortingVisualiser extends React.Component {
                         ))
                     ))}
                 </div>
+                <PopupComponent isOpen={this.state.isOpen} onClose={() => this.setState({isOpen: false})}>
+                    <h3>The Map</h3>
+                    <p>The Grid: the grid represents a visual map of the port, showing the status of the ship, storage and the train.</p>
+                    <p>The Ship: the ship can be seen on hte left of the screen. Initially 5 empty spaces vertically, but will be filled
+                        with cargo and a ship icon at the manipoulation of the "Receive New Ship" button. The ship can hold 4 cargo containers.</p>
+                    <p>The Storage: the storage is located between the two brick walls. The storage can hold upto 5 cargo containers.</p>
+                    <p>The Train: the train is located on the bottom right. The train (the back of the train whihc is the on the left hand side of the train) can hold upto 3 cargo containers.</p>
+                    <h3>The Buttons</h3>
+                    <p>"Receive New Ship": This button gets a new ship to arrive at the port filled with maximum cargo containers (4)</p>
+                    <p>"Unload": This button removes as many containers as possible from the ship to the storage and from the storage to the train</p>
+                    <p>"Send Train": this button send the train off with its current containers and calls in a new empty train, ready to transport more containers</p>
+                </PopupComponent>
                 <div className="buttons">
                     <button onClick={() => this.receive_ship()}>Receive New Ship</button>
                     <button onClick={() => this.unload()}>Unload</button>
                     <button onClick={() => this.train_send()}>Send Train</button>
+                    <button className="help-button" onClick={() => this.setState({isOpen: !this.state.isOpen})}><img src={information}/></button>
                 </div>
             </div>
         );

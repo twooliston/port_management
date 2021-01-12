@@ -1,6 +1,7 @@
 .view {
-  margin-left: 350px;
-  margin-right: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1012px;
 }
 
 .grid-container {
@@ -28,7 +29,6 @@
 button {
   font-size: 35px;
   font-family: inherit;
-  border: 0;
   padding: 20px 30px;
   background-color: transparent;
   border: 2px solid;
@@ -38,7 +38,36 @@ button:hover {
   background-color: rgba(255, 204, 153, 0.2);
 }
 
+.help-button {
+  background-color: transparent;
+  border: 0;
+  width: 100px;
+}
+
+.help-button:hover {
+  background-color: transparent;
+}
+
+.help-button:focus {
+  outline: none;
+}
+
+.help-button:hover img {
+  background-color: rgba(255, 204, 153, 0.2);
+}
+
+.help-button img {
+  border-radius: 25px;
+}
+
 img {
   max-height: 50px;
   width: 50px;
+}
+
+@media screen and (max-width: 1012px) {
+  .view {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
