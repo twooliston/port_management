@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/port_management/static/css/main.879ef578.chunk.css",
+    "main.js": "/port_management/static/js/main.187aee69.chunk.js",
+    "main.js.map": "/port_management/static/js/main.187aee69.chunk.js.map",
+    "runtime-main.js": "/port_management/static/js/runtime-main.b1d09d44.js",
+    "runtime-main.js.map": "/port_management/static/js/runtime-main.b1d09d44.js.map",
+    "static/js/2.b114296f.chunk.js": "/port_management/static/js/2.b114296f.chunk.js",
+    "static/js/2.b114296f.chunk.js.map": "/port_management/static/js/2.b114296f.chunk.js.map",
+    "static/js/3.80b21c6a.chunk.js": "/port_management/static/js/3.80b21c6a.chunk.js",
+    "static/js/3.80b21c6a.chunk.js.map": "/port_management/static/js/3.80b21c6a.chunk.js.map",
+    "index.html": "/port_management/index.html",
+    "static/css/main.879ef578.chunk.css.map": "/port_management/static/css/main.879ef578.chunk.css.map",
+    "static/js/2.b114296f.chunk.js.LICENSE.txt": "/port_management/static/js/2.b114296f.chunk.js.LICENSE.txt",
+    "static/media/cargo.4f78aa6d.png": "/port_management/static/media/cargo.4f78aa6d.png",
+    "static/media/coupling.1c1da7e0.png": "/port_management/static/media/coupling.1c1da7e0.png",
+    "static/media/crane.c540cf09.png": "/port_management/static/media/crane.c540cf09.png",
+    "static/media/information.d950d866.png": "/port_management/static/media/information.d950d866.png",
+    "static/media/ship.288b4417.png": "/port_management/static/media/ship.288b4417.png",
+    "static/media/wheel.44757780.png": "/port_management/static/media/wheel.44757780.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1d09d44.js",
+    "static/js/2.b114296f.chunk.js",
+    "static/css/main.879ef578.chunk.css",
+    "static/js/main.187aee69.chunk.js"
+  ]
+}
