@@ -132,15 +132,15 @@ export class SortingVisualiser extends React.Component {
                 </div>
                 <PopupComponent isOpen={this.state.isOpen} onClose={() => this.setState({isOpen: false})}>
                     <h3>The Map</h3>
-                    <p>The Grid: the grid represents a visual map of the port, showing the status of the ship, storage and the train.</p>
-                    <p>The Ship: the ship can be seen on hte left of the screen. Initially 5 empty spaces vertically, but will be filled
+                    <p><u>The Grid:</u> the grid represents a visual map of the port, showing the status of the ship, storage and the train.</p>
+                    <p><u>The Ship:</u> the ship can be seen on hte left of the screen. Initially 5 empty spaces vertically, but will be filled
                         with cargo and a ship icon at the manipoulation of the "Receive New Ship" button. The ship can hold 4 cargo containers.</p>
-                    <p>The Storage: the storage is located between the two brick walls. The storage can hold upto 5 cargo containers.</p>
-                    <p>The Train: the train is located on the bottom right. The train (the back of the train whihc is the on the left hand side of the train) can hold upto 3 cargo containers.</p>
+                    <p><u>The Storage:</u> the storage is located between the two brick walls. The storage can hold upto 5 cargo containers.</p>
+                    <p><u>The Train:</u> the train is located on the bottom right. The train (the back of the train whihc is the on the left hand side of the train) can hold upto 3 cargo containers.</p>
                     <h3>The Buttons</h3>
-                    <p>"Receive New Ship": This button gets a new ship to arrive at the port filled with maximum cargo containers (4)</p>
-                    <p>"Unload": This button removes as many containers as possible from the ship to the storage and from the storage to the train</p>
-                    <p>"Send Train": this button send the train off with its current containers and calls in a new empty train, ready to transport more containers</p>
+                    <p><u>Receive New Ship:</u> This button gets a new ship to arrive at the port filled with maximum cargo containers (4)</p>
+                    <p><u>Unload:</u> This button removes as many containers as possible from the ship to the storage and from the storage to the train</p>
+                    <p><u>Send Train:</u> this button send the train off with its current containers and calls in a new empty train, ready to transport more containers</p>
                 </PopupComponent>
                 <div className="buttons">
                     <button onClick={() => this.receive_ship()}>Receive New Ship</button>
