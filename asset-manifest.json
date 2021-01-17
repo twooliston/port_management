@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/port_management/static/css/main.fb8fa4da.chunk.css",
-    "main.js": "/port_management/static/js/main.890f61f8.chunk.js",
-    "main.js.map": "/port_management/static/js/main.890f61f8.chunk.js.map",
+    "main.css": "/port_management/static/css/main.47c5eee5.chunk.css",
+    "main.js": "/port_management/static/js/main.b0dd3176.chunk.js",
+    "main.js.map": "/port_management/static/js/main.b0dd3176.chunk.js.map",
     "runtime-main.js": "/port_management/static/js/runtime-main.b1d09d44.js",
     "runtime-main.js.map": "/port_management/static/js/runtime-main.b1d09d44.js.map",
     "static/js/2.b114296f.chunk.js": "/port_management/static/js/2.b114296f.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.80b21c6a.chunk.js": "/port_management/static/js/3.80b21c6a.chunk.js",
     "static/js/3.80b21c6a.chunk.js.map": "/port_management/static/js/3.80b21c6a.chunk.js.map",
     "index.html": "/port_management/index.html",
-    "static/css/main.fb8fa4da.chunk.css.map": "/port_management/static/css/main.fb8fa4da.chunk.css.map",
+    "static/css/main.47c5eee5.chunk.css.map": "/port_management/static/css/main.47c5eee5.chunk.css.map",
     "static/js/2.b114296f.chunk.js.LICENSE.txt": "/port_management/static/js/2.b114296f.chunk.js.LICENSE.txt",
     "static/media/cargo.4f78aa6d.png": "/port_management/static/media/cargo.4f78aa6d.png",
     "static/media/coupling.1c1da7e0.png": "/port_management/static/media/coupling.1c1da7e0.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.b1d09d44.js",
     "static/js/2.b114296f.chunk.js",
-    "static/css/main.fb8fa4da.chunk.css",
-    "static/js/main.890f61f8.chunk.js"
+    "static/css/main.47c5eee5.chunk.css",
+    "static/js/main.b0dd3176.chunk.js"
   ]
 }
